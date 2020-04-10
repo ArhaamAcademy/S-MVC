@@ -113,7 +113,7 @@ class Account extends BaseController{
                 $userData['emailError'] = 'Sorry invalid email';
                 $this->view("signin", $userData);
 
-            }elseif($result['status'] === 'PasswordNotMatcheds'){
+            }elseif($result['status'] === 'PasswordNotMatched'){
 
                 $userData['passwordError'] = 'Sorry invalid password';
                 $this->view("signin", $userData);
@@ -135,8 +135,6 @@ class Account extends BaseController{
 
         $this->destroy();
         $this->redirect("account/signin"); 
-    }
-
-    
+    } 
 
 }
