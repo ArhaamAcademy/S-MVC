@@ -31,7 +31,7 @@ include 'layout/nav.php';
                 <option value="c">C</option>
             </select>
             <div class="text-danger">
-                <?php //if(!empty($data['qualityError'])): echo $data['qualityError']; endif; ?>
+                <?php if(!empty($data['qualityError'])): echo $data['qualityError']; endif; ?>
             </div>
         </div>
         <!-- Close form-group -->
